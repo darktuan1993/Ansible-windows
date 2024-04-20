@@ -10,7 +10,7 @@
 - name: Create list domain
   win_dns_record:
     name: "{{ item }}"
-    type: "A"
+    type: "{{ typeRecord }}"
     value: "{{ ipNginx }}"
-    zone: "sre.local"
+    zone: "{{ domainName }}"
   loop: "{{ domains }}"
