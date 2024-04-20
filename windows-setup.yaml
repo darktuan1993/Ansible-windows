@@ -1,0 +1,5 @@
+---
+- name: Example Ansible playbook
+  hosts: windows_host
+  roles:
+    - ping
