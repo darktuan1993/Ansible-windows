@@ -1,2 +1,5 @@
-- name: Test
-  win_ping:
+---
+- hosts: windows_host
+  tasks:
+    - name: Example from an Ansible Playbook
+      win_ping:
