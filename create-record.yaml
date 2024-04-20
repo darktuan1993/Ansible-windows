@@ -1,12 +1,5 @@
 ---
 - hosts: windows_host
   tasks:
-    - name: test connection
-      ansible.windows.win_ping:
-    - name: Create database server record
-      community.windows.win_dns_record:
-        name: "rancher"
-        type: "A"
-        value: "10.0.0.187"
-        zone: "sre.local"
-
+    - name: Example Task
+      win_ping:
