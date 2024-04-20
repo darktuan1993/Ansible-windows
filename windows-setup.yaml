@@ -1,6 +1,7 @@
 ---
-- name: Ansible playbook
+- name: AUTOMATION WINDOWS PLAYBOOK
   hosts: windows_host
   roles:
-    - ping
-    - createdns-record
+    - pingCheck
+    - dnsCreateRecord
+    # - dnsDeleteRecord

@@ -1,0 +1,13 @@
+---
+- name: Check list domain record DNS
+  include_vars:
+    file: ../../../global_vars/domains.yaml
+
+- name: Delete list record DNS
+  win_dns_record:
+    name: "{{ item }}"
+    type: "{{ typeRecord }}"
+    value: "{{ ipNginx }}"
+    zone: "{{ domainName }}"
+    state: absent
+  loop: "{{ domains }}"
