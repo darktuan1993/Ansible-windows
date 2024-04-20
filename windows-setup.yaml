@@ -2,7 +2,7 @@
 - name: Ansible playbook
   hosts: windows_host
   roles:
-    - ping
+    #- ping
     # - create-user
     # - open-firewall
-    # - record-dns
+     - record-dns
