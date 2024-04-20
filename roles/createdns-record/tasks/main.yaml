@@ -1,7 +1,7 @@
 ---
 - name: Include domain list from vars
   include_vars:
-    file: var/domains.yaml
+    file: var/domains.txt
 
 - name: Create DNS records for custom domains
   win_dns_record:
