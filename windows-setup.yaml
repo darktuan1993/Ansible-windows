@@ -1,8 +1,8 @@
 ---
 - name: Ansible playbook
   hosts: windows_host
-  become: yes
-  become_method: winrm
+  # become: yes
+  # become_method: winrm
   roles:
     - ping
     # - create-user
