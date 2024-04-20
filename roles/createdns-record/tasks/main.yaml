@@ -3,9 +3,9 @@
   include_vars:
     file: ../../../global_vars/domains.yaml
 
-- name: IP nginx
-  include_vars:
-    file: ../../../global_vars/ip-nginx.yaml
+# - name: IP nginx
+#   include_vars:
+#     file: ../../../global_vars/ip-nginx.yaml
 
 - name: Create list domain
   win_dns_record:

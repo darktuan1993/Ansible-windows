@@ -1,4 +1,7 @@
 # Khai báo tên của record ở đây
+domainName: sre.local
+ipNginx: 10.0.0.110
+typeRecord: A
 domains:
   - cvb
   - sdfs
