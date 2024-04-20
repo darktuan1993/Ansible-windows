@@ -5,4 +5,4 @@
     #- ping
     # - create-user
     # - open-firewall
-     - record-dns
+    - record-dns
