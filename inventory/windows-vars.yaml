@@ -1,5 +1,0 @@
-# File: windows_vars.yml
-ansible_connection: winrm
-ansible_user: Administrator
-ansible_password: abcd@1234
-ansible_winrm_server_cert_validation: ignore
