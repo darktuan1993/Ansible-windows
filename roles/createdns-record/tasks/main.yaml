@@ -1,16 +1,16 @@
 ---
 - name: List name record domain
   include_vars:
-    file: var/domains.yaml
-
+    file: ../../../global_vars/domains.yaml
+    
 - name: IP nginx
   include_vars:
-    file: var/ip-nginx.yaml
+    file: ../../../global_vars/ip-nginx.yaml
 
 - name: Create list domain
   win_dns_record:
     name: "{{ item }}"
     type: "A"
-    value: "{{ ip }}"
+    value: "{{ ip-vip-nginx }}"
     zone: "sre.local"
   loop: "{{ domains }}"
