@@ -1,6 +1,6 @@
 ---
 - name: Ansible playbook
-  hosts: windows_hosts
+  hosts: windows_host
   tasks:
     - name: Ping Windows hosts
       include_role:
