@@ -5,6 +5,3 @@
   # become_method: winrm
   roles:
     - ping
-    # - create-user
-    # - open-firewall
-    # - record-dns
