@@ -4,10 +4,9 @@
     file: ../../../global_vars/domains.yaml
 
 - name: Delete list record DNS
-  win_dns_record:
+  community.windows.win_dns_record:
     name: "{{ item }}"
     type: "{{ typeRecord }}"
-    value: "{{ ipNginx }}"
     zone: "{{ domainName }}"
     state: absent
   loop: "{{ domains }}"
