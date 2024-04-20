@@ -1,12 +1,16 @@
 ---
-- name: Include domain list from vars
+- name: List name record domain
   include_vars:
     file: var/domains.yaml
 
-- name: Create DNS records for custom domains
+- name: IP nginx
+  include_vars:
+    file: var/ip-nginx.yaml
+
+- name: Create list domain
   win_dns_record:
     name: "{{ item }}"
     type: "A"
-    value: "10.0.0.10"
+    value: "{{ ip }}"
     zone: "sre.local"
   loop: "{{ domains }}"
