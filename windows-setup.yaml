@@ -6,14 +6,6 @@
       include_role:
         name: ping
 
-    # - name: Create user on Windows hosts
-    #   include_role:
-    #     name: create-user
-
-    # - name: Open firewall on Windows hosts
-    #   include_role:
-    #     name: open-firewall
-
     - name: Record DNS on Windows hosts
       include_role:
         name: createdns-record
