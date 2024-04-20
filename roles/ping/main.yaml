@@ -1,6 +1,1 @@
----
-- name: Example from an Ansible Playbook
-  win_ping:
-  register: test
-  - debug:
-      var: test
+- name: Test
