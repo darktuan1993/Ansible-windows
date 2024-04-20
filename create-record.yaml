@@ -1,5 +1,5 @@
 ---
-- hosts: myhosts
+- hosts: windows_host
   tasks:
     - name: test connection
       ansible.windows.win_ping:
