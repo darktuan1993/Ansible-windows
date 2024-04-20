@@ -1,15 +1,12 @@
 ---
-- name: Create DNS records for domains
-  hosts: windows_host
-  tasks:
-    - name: Include domain list from vars
-      include_vars:
-        file: var/domains.ini
+- name: Include domain list from vars
+  include_vars:
+    file: var/domains.ini
 
-    - name: Create DNS records for custom domains
-      win_dns_record:
-        name: "{{ item }}"
-        type: "A"
-        value: "10.0.0.10"
-        zone: "sre.local"
-      loop: "{{ domains }}"
+- name: Create DNS records for custom domains
+  win_dns_record:
+    name: "{{ item }}"
+    type: "A"
+    value: "10.0.0.10"
+    zone: "sre.local"
+  loop: "{{ domains }}"
