@@ -2,6 +2,6 @@
 - name: AUTOMATION WINDOWS PLAYBOOK
   hosts: windows_host
   roles:
-    - pingCheck
-    - dnsCreateRecord
-    # - dnsDeleteRecord
+    # - pingCheck
+    # - dnsCreateRecord
+    - dnsDeleteRecord
