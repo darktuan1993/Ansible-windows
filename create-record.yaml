@@ -2,4 +2,6 @@
 - hosts: windows_host
   tasks:
     - name: Example Task
+      include_vars:
+          file: inventory/windows_credentials.yaml
       win_ping:
